@@ -17,6 +17,15 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        Properties properties = new Properties()
+        if (rootProject.file("local.properties").exists()) {
+            properties.load(rootProject.file("local.properties").newDataInputStream())
+        }
+
+        buildConfigField 'String', 'API_CLIENT_ID', '"' + properties.getProperty("api.client", "") + '"'
+        buildConfigField 'String', 'API_CLIENT_SECRET', '"' + properties.getProperty("api.secret", "") + '"'
+        buildConfigField 'String', 'API_VERSION', '"' + properties.getProperty("api.version", "") + '"'
     }
 
     buildTypes {
