@@ -1,6 +1,8 @@
 # Foursquare Search (MVP - Model-View-Presenter)
 
 
+Demo video can be checked from here: https://youtu.be/6cp580Eb908
+
 ## Running the project
 
 Before running the app, make sure to add following values to the `local.properties` file:
