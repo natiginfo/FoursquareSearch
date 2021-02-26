@@ -1,6 +1,7 @@
 package com.natigbabayev.foursquare.search.data
 
 import android.Manifest
+import android.annotation.SuppressLint
 import android.app.Application
 import android.content.pm.PackageManager
 import android.location.LocationManager
@@ -22,6 +23,7 @@ class LocationRepositoryImpl @Inject constructor(
         ) == PackageManager.PERMISSION_GRANTED
     }
 
+    @SuppressLint("MissingPermission")
     override fun getLocation(): Single<LocationData> {
         return Single.create {
             if (!it.isDisposed) {

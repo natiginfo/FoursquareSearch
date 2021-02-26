@@ -6,6 +6,8 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.annotation.StringRes
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
 import androidx.paging.LoadState
 import androidx.paging.PagingData
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -60,12 +62,13 @@ class SearchActivity : MvpActivity<SearchContract.View, SearchPresenter>(), Sear
             .subscribeBy(
                 onNext = {
                     when {
-                        shouldShowRequestPermissionRationale(Manifest.permission.ACCESS_COARSE_LOCATION) -> {
+                        ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.ACCESS_COARSE_LOCATION) -> {
                             onPermissionRequired()
                         }
                         else -> {
                             // You can directly ask for the permission.
-                            requestPermissions(
+                            ActivityCompat.requestPermissions(
+                                this,
                                 arrayOf(Manifest.permission.ACCESS_COARSE_LOCATION),
                                 REQUEST_CODE
                             )
@@ -165,6 +168,7 @@ class SearchActivity : MvpActivity<SearchContract.View, SearchPresenter>(), Sear
         permissions: Array<String>,
         grantResults: IntArray
     ) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults)
         when (requestCode) {
             REQUEST_CODE -> {
                 // If request is cancelled, the result arrays are empty.
