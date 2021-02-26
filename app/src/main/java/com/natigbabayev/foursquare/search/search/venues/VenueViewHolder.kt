@@ -18,7 +18,6 @@ class VenueViewHolder(
         }
     }
 
-
     fun bind(venue: Venue) {
         with(binding) {
             textName.text = venue.name
