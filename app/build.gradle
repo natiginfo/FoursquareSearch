@@ -81,8 +81,10 @@ dependencies {
 
     // Retrofit
     implementation "com.squareup.retrofit2:retrofit:2.9.0"
-    implementation 'com.squareup.retrofit2:converter-moshi:2.9.0'
-    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.9.0'
+    implementation "com.squareup.retrofit2:converter-moshi:2.9.0"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:2.9.0"
+    implementation "com.squareup.okhttp3:logging-interceptor:3.14.9"
+    testImplementation "com.squareup.okhttp3:mockwebserver:3.14.9"
 
     // Moshi
     implementation "com.squareup.moshi:moshi:1.11.0"
@@ -90,7 +92,9 @@ dependencies {
 
     // Testing
     testImplementation "junit:junit:4.13.2"
+    testImplementation "org.mockito:mockito-inline:3.8.0"
     testImplementation "com.nhaarman.mockitokotlin2:mockito-kotlin:2.2.0"
+    testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:1.4.2"
 
     androidTestImplementation "androidx.test.ext:junit:1.1.2"
     androidTestImplementation "androidx.test.espresso:espresso-core:3.3.0"
