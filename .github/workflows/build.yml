@@ -10,3 +10,6 @@ jobs:
 
       - name: Build the app
         run: ./gradlew build
+
+      - name: Run unit tests
+          run: ./gradlew testDebugUnitTest
