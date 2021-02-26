@@ -26,6 +26,8 @@ api.version=20180323
 
 * `Paging 3`: it was first time I used new `Paging 3` library. I have used previously `Paging 2` but compared to that one, it was simpler to implement pagination using `Paging 3`.
 
+* `Github Actions`: used this for creating basic CI with validate, build and test workflows.
+
 
 ## Some future to do:
 
