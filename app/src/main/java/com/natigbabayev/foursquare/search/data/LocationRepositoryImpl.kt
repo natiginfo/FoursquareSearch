@@ -30,7 +30,7 @@ class LocationRepositoryImpl @Inject constructor(
                 it.onSuccess(
                     LocationData(
                         latitude = location?.latitude ?: 0.0,
-                        longitude = location?.longitude ?: 0.0,
+                        longitude = location?.longitude ?: 0.0
                     )
                 )
             }

@@ -8,7 +8,7 @@ import com.natigbabayev.foursquare.search.databinding.ItemVenueBinding
 import com.natigbabayev.foursquare.search.domain.model.Venue
 
 class VenueViewHolder(
-    private val binding: ItemVenueBinding,
+    private val binding: ItemVenueBinding
 ) : RecyclerView.ViewHolder(binding.root) {
 
     companion object {

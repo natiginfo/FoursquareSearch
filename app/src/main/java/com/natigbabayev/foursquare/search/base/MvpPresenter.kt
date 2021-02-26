@@ -18,12 +18,12 @@ abstract class MvpPresenter<View : MvpView> : ViewModel() {
     }
 
     fun attachView(view: View) {
-        viewRef?.clear();
+        viewRef?.clear()
         viewRef = WeakReference<View>(view)
     }
 
     fun detachView() {
-        viewRef?.clear();
+        viewRef?.clear()
         viewRef = null
     }
 

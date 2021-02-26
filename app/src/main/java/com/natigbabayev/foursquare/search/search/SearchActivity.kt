@@ -96,8 +96,6 @@ class SearchActivity : MvpActivity<SearchContract.View, SearchPresenter>(), Sear
                 else -> {
                 }
             }
-
-
         }
     }
 
@@ -170,8 +168,8 @@ class SearchActivity : MvpActivity<SearchContract.View, SearchPresenter>(), Sear
         when (requestCode) {
             REQUEST_CODE -> {
                 // If request is cancelled, the result arrays are empty.
-                if ((grantResults.isNotEmpty()
-                            && grantResults[0] == PackageManager.PERMISSION_GRANTED)
+                if ((grantResults.isNotEmpty() &&
+                            grantResults[0] == PackageManager.PERMISSION_GRANTED)
                 ) {
                     presenter.observeSearchResults()
                     presenter.updateSearchKeyword(binding.inputSearch.text.toString())

@@ -3,7 +3,11 @@ package com.natigbabayev.foursquare.search.search
 import com.natigbabayev.foursquare.search.domain.SearchVenuesUseCase
 import com.natigbabayev.foursquare.search.domain.model.LocationData
 import com.natigbabayev.foursquare.search.domain.repository.LocationRepository
-import com.nhaarman.mockitokotlin2.*
+import com.nhaarman.mockitokotlin2.mock
+import com.nhaarman.mockitokotlin2.any
+import com.nhaarman.mockitokotlin2.verify
+import com.nhaarman.mockitokotlin2.whenever
+import com.nhaarman.mockitokotlin2.times
 import io.reactivex.Single
 import io.reactivex.schedulers.TestScheduler
 import kotlinx.coroutines.Dispatchers

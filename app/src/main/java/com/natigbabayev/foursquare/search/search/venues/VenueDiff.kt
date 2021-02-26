@@ -1,6 +1,5 @@
 package com.natigbabayev.foursquare.search.search.venues
 
-
 import androidx.recyclerview.widget.DiffUtil
 import com.natigbabayev.foursquare.search.domain.model.Venue
 

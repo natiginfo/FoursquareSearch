@@ -11,7 +11,6 @@ import retrofit2.Call
 import retrofit2.Retrofit
 import retrofit2.http.GET
 
-
 class FoursquareRequestInterceptorTest {
 
     private val apiVersion = "apiVersion"
