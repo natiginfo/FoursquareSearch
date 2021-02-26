@@ -7,7 +7,6 @@ import android.view.View
 import android.widget.Toast
 import androidx.annotation.StringRes
 import androidx.core.app.ActivityCompat
-import androidx.core.content.ContextCompat
 import androidx.paging.LoadState
 import androidx.paging.PagingData
 import androidx.recyclerview.widget.LinearLayoutManager
