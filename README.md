@@ -3,7 +3,7 @@
 
 ## Running the project
 
-To run the project, make sure to add following values to the `local.properties` file:
+Before running the app, make sure to add following values to the `local.properties` file:
 
 ```
 api.client=CLIENT
