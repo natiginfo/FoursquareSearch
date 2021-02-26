@@ -4,6 +4,7 @@ buildscript {
     ext.hilt_version = "2.32-alpha"
     ext.work_version = "2.5.0"
     ext.room_version = "2.2.6"
+    ext.paging_version = "3.0.0-beta01"
 
     repositories {
         google()
