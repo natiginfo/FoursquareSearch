@@ -18,7 +18,7 @@ api.version=20180323
 
 * `Dagger Hilt` for Dependency Injection and easy to use
 
-* `MvpPresenter`: I used `ViewModel` as a base of `MvpPresenter` as it's provided by the platform and because of the `Dagger Hilt` support. I implemented `MvpPresenter` by extending `ViewModel`. I tried not to over-engineer the solution, that's why I think solution is maintainable with current requirements and architecture. `MvpPresenter`. I wrote unit tests for the complex part of `SearchPresenter`. Presenter directly uses injected `LocationRepository` and `SearchVenuesUseCase`. I wrote some unit tests for `SearchVenuesUseCase` since it has page related calculation.
+* `MvpPresenter`: I used `ViewModel` as a base of `MvpPresenter` as it's provided by the platform and because of the `Dagger Hilt` support. I implemented `MvpPresenter` by extending `ViewModel`. I tried not to over-engineer the solution, that's why I think solution is maintainable with current requirements and architecture. I wrote unit tests for the complex part of `SearchPresenter`. Presenter directly uses injected `LocationRepository` and `SearchVenuesUseCase`. I wrote some unit tests for `SearchVenuesUseCase` since it has page related calculation.
 
 * `RxJava 2`: To use publish-subscribe pattern and make threading easy, I used `RxJava 2`. Mainly used `Observable` and `Single`. Besides those, I used `RxBinding` and `RxRelay2`.
 
