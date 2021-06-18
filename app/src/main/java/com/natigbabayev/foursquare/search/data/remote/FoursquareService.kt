@@ -14,6 +14,6 @@ interface FoursquareService {
         @Query("query") keyword: String,
         @Query("ll") location: String,
         @Query("limit") limit: Int, // used for pagination
-        @Query("offset") offset: Int, // used for pagination
+        @Query("offset") offset: Int // used for pagination
     ): Single<ExploreVenueResponse>
 }

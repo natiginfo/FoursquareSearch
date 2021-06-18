@@ -8,7 +8,7 @@ data class ExploreVenueResponse(
     data class Response(
         @Json(name = "totalResults") val totalResults: Int,
         @Json(name = "headerFullLocation") val fullLocation: String,
-        @Json(name = "groups") val groups: List<Group>,
+        @Json(name = "groups") val groups: List<Group>
     )
 
     data class Group(
@@ -22,6 +22,7 @@ data class ExploreVenueResponse(
     )
 
     data class Venue(
+        @Json(name = "id") val id: String,
         @Json(name = "name") val name: String,
         @Json(name = "location") val location: Location
     )
